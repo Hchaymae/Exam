@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <h:outputStylesheet  library="webjars" name="bootstrap/5.3.3/css/bootstrap.css"/>
+</h:head>
+
+<h:body>
+    <h:form  action="post" >
+        <div class="container-fluid">
+            <div class="text-center mt-5">
+                <h:outputText class="h1" value="Employee Affectation"/>
+            </div>
+            <h:outputText  value="Employee Name " />
+            <h:selectOneMenu value="#{employeeBean.selectedEmployee}">
+                <f:selectItems value="#{employeeBean.employees}" var="employee" itemLabel="#{employee.name}" />
+            </h:selectOneMenu>
+            <br/>
+            <h:outputText value=" Project Name "/>
+            <h:dataTable value="#{employeeBean.projects}" var="project">
+                <h:column>
+                    <h:outputText value="#{project.name}" />
+                </h:column>
+            </h:dataTable>
+            <h:outputText value ="implications"/>
+            <h:selectOneMenu value="#{employeeBean.selectedPercentage}">
+                <f:selectItem itemValue="10" itemLabel="10%" />
+                <f:selectItem itemValue="20" itemLabel="20%" />
+                <f:selectItem itemValue="30" itemLabel="30%" />
+            </h:selectOneMenu>
+            <br/>
+            <h:commandButton value="#{message.edit}" action="#{}"  type="submit"
+                             class="btn btn-primary text-center"  style="margin-bottom:10px;" />
+        </div>
+    </h:form>
+</h:body>
+</html>

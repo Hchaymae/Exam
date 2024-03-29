@@ -1,0 +1,16 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºà»ûÿÿÿÿ8¸Ò˜Ôè1J$32cd5def-ee2e-4500-9293-d188e2973e56
+{
+java:S1874"3Remove this use of "ManagedBean"; it is deprecated.(Ü½‰êûÿÿÿÿ8±…®Ôè1J$1f4a9bd6-306f-45db-b747-db9e3581fde4
+}
+java:S1874"5Remove this use of "SessionScoped"; it is deprecated.(¢ÈŸ×øÿÿÿÿ8²…®Ôè1J$8a4f3be6-42e7-4807-8317-816c7bcff58b
+x
+java:S1172"0Remove this unused method parameter "employees".(½Í‡€úÿÿÿÿ8ş÷ëÔè1J$aee301dd-a3d5-4792-b2fd-23dd2ec657e6
+p
+java:S1068"-Remove this unused "employees" private field.(†»Ñß8ôä–Ôè1J$97a7a072-fe88-4c5b-af63-378e867ddc16
+v
+java:S1068"3Remove this unused "employeeService" private field.(ŞÈ8õä–Ôè1J$48144246-7966-4230-9cf4-4fe9932cb0ab
+t
+java:S1068",Remove this unused "employee" private field.(ô› şÿÿÿÿ8õä–Ôè1J$241794ea-4b5c-4d5b-ab26-a120584a3cbc
+u
+java:S1068"2Remove this unused "affecterButton" private field.(¬Ü‡Û8ó€‚Õè1J$f85d3416-9c64-4793-aab1-69e4dff016c5

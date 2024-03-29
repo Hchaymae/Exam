@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <h:outputStylesheet  library="webjars" name="bootstrap/5.3.3/css/bootstrap.css"/>
+</h:head>
+
+<h:body>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-12 border border-primary rounded p-3">
+                <h:dataTable id="employeeTable" var="employee" value="#{employeeBean.displayedEmployees}"  styleClass="table table-striped" style="width:100%!important;">
+                    <h:column class="w-25">
+                        <f:facet  name="header">Id</f:facet>
+                        <h:outputText value="#{employee.id}" />
+                    </h:column>
+                    <h:column class="w-25">
+                        <f:facet  name="header">Name</f:facet>
+                        <h:outputText  value="#{employee.name}"/>
+                    </h:column>
+                    <h:column class="w-25">
+                        <f:facet  name="header">Email</f:facet>
+                        <h:outputText value="#{employee.email}" />
+                    </h:column>
+                    <h:column class="w-25">
+                        <f:facet name="header">Skill</f:facet>
+                        <h:outputText value="#{employee.skill}"/>
+                    </h:column>
+                    <h:column class="w-25">
+                        <f:facet name="header">Skill</f:facet>
+                        <h:outputText value="#{employee.projects}"/>
+                    </h:column>
+                    <h:column class="w-25">
+                        <h:commandButton value="#{message.delete}" action="#{employeeBean.delete(employee)}" type="submit"
+                                         class="btn btn-danger text-center" rendered="#{not employee.editable}" />
+                    </h:column>
+                </h:dataTable>
+
+            </div>
+        </div>
+    </div>
+</h:body>
+</html>

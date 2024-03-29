@@ -1,0 +1,15 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìºà»ûÿÿÿÿ8“Ò˜Ôè1J$8d260090-b0d7-4732-a06c-029ce5f0e4e7
+v
+java:S1874
+"3Remove this use of "ManagedBean"; it is deprecated.(ìİóş8¤³¯Ôè1J$7a56dc16-c96c-4418-aa11-35bc19cec520
+}
+java:S1874"5Remove this use of "SessionScoped"; it is deprecated.(¢ÈŸ×øÿÿÿÿ8¥³¯Ôè1J$235dfb38-6de0-4a5d-971b-bb3446e7c6cc
+L
+java:S1172"/Remove this unused method parameter "projects".(ƒÆŸÊ8÷éûÔè1
+o
+java:S1068",Remove this unused "projects" private field.(î¥ ü8Íÿ”Ôè1J$c31bfe1d-a433-42d6-9037-0f436475124e
+u
+java:S1068"2Remove this unused "projectService" private field.(Úè±ü8†¨•Ôè1J$e0f0c4d5-03ab-4d91-b2ca-aa92574fad3a
+s
+java:S1068"+Remove this unused "project" private field.(Ø¿Òåıÿÿÿÿ8†¨•Ôè1J$a68858b0-3043-4cee-bc90-4ae119587d03
